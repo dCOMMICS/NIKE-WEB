@@ -3,8 +3,8 @@
 
 x = 12
 y= 14
-function square(x, y) {
-    return x + y;
+function square(num) {
+    return num * num;
 };
 
-console.log(square(5));
+console.log(square(6));
