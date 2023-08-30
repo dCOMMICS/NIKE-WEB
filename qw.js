@@ -16,3 +16,18 @@ const createHelloWorld = function() {
 
 // day 1 done//
 
+// leetcode//
+// day 2//
+var createCounter = function(n){
+    return function () {
+        return n++; // hidden counter
+    };
+}
+
+const counter = createCounter(10)
+counter()//10
+counter()//11
+counter()//12
+
+// leetcode//
+// day 3 done//
