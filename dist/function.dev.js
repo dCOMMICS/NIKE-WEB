@@ -11,3 +11,7 @@ function square(num) {
 
 ;
 console.log(square(6));
+
+function displaySquare(fn) {
+  console.log("square is " + fn);
+}
