@@ -31,3 +31,28 @@ counter()//12
 
 // leetcode//
 // day 3 done//
+
+var createCounter = function (init){
+    let count = init;
+
+    function increment(){
+        return ++count;
+    }
+    function decrement(){
+        return --count;
+    }
+    function reset(){
+        count = init;
+        return count;
+    }
+
+    increment()
+    decrement()
+    reset()
+
+    return {
+        increment: increment,
+        decrement: decrement,
+        reset: reset,
+    }
+};
