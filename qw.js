@@ -57,4 +57,39 @@ var createCounter = function (init){
     }
 };
 
-// DAY 4 LEETCODE//
+// DAY 4 LEETCODE/
+
+/**
+ * @param {string} val
+ * @return {Object}
+ */
+
+type ToBeOrNotBe = {
+    toBe; (val: any) => boolean;
+    notToBe; (val: any) => boolean;
+  };
+  function expect(val: any): ToBeOrNotBe {
+    return {
+      toBe : (val2) =>{
+        if (val === val){
+          return true
+        }else(
+          throw new Error {"Not Equal"}
+        )
+      }, notToBe:(val2) =>{
+        if (val2 !== val){
+          return true
+        }
+        else {
+          throw new Error ("Equal")
+        }
+        
+      },
+    }
+  };
+  /**
+   * expect(5).toBe(5); // true
+   * expect(5).notToBe(5); // throws "Equal"
+   */
+  
+  
